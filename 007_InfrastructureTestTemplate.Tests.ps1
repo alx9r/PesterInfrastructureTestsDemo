@@ -1,6 +1,6 @@
 ﻿$computernames = '127.0.0.1','localhost'
-$records = @{}
 
+$records = @{}
 foreach ( $computername in $computernames )
 {
     $record = @{}
@@ -20,7 +20,6 @@ foreach ( $computername in $records.Keys )
         }
     }
 }
-
 
 # To save $records:
 # $records | Export-Clixml "$env:USERPROFILE\desktop\OsVersionRecords.xml"
