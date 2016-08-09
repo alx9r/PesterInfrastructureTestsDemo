@@ -27,12 +27,12 @@ foreach ( $computername in $records.Keys )
     $record = $records.$computername
     Describe "Computer $computername" {
         It 'extract the VersionString' {
-            $record.OSVersion = $record.Win32_OperatingSystem | % Version
+            $record.OSVersion = $record.Win32_OperatingSystem | % OSVersion
             $record.OSVersion | Should not beNullOrEmpty
             $record.OSVersion | Should beOfType 'string'
         }
         It "version matches pattern" {
-            $record.OSVersion | Should match '6\1'
+            $record.OSVersion | Should match '6\.1'
         }
     }
 }
