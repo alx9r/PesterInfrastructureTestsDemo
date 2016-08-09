@@ -32,7 +32,7 @@ foreach ( $computername in $records.Keys )
             $record.OSVersion | Should beOfType 'string'
         }
         It "version matches pattern" {
-            $record.OSVersion | Should match '6\.3'
+            $record.OSVersion | Should match '6\.1'
         }
     }
 }
