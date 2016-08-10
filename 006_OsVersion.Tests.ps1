@@ -15,7 +15,7 @@ foreach ( $computername in $computernames )
                 ComputerName = $computername
                 Class = 'Win32_OperatingSystem'
             }
-            $record.Win32_OperatingSystem = Get-WmiObject @splat
+            $record.Win32_OperatingSystem = Get-WmiObject @splat ; sleep 4
             $record.Win32_OperatingSystem |
                 Should not beNullOrEmpty
         }
