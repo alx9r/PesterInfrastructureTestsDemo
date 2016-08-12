@@ -9,7 +9,7 @@ $myInfrastructureTests = @(
     'HyperV - VM and switch configuration complies with policy'
     'HyperVReplication - correct configuration, replication occuring and healthy'
     'Bitlocker - enabled, encrypted'
-    'PERC - maintenance jobs happening, parse logs for disk health, RAID config matches policy'
+    'PERC - maintenance jobs happening, parse logs for disk health, RAID config'
     'TimeZones - all servers on the right timezone'
 )
 $totalNumberOfTestsToday = 1700
