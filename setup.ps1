@@ -2,6 +2,8 @@ Import-Module Pester
 Set-Location "$env:USERPROFILE\Desktop\PesterInfrastructureTestsDemo"
 explorer .
 ise .\000_Intro.ps1
+$psISE.Options.Zoom = 160
+
 Clear-Host
 
 Describe 'screen resolution' {
